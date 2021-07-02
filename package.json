@@ -5,5 +5,19 @@
   "main": "index.js",
   "repository": "https://github.com/orestisrodriguez/transdis",
   "author": "Orestis Rodriguez <orestis@mediatool.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "nps test",
+    "test:unit": "nps test.unit",
+    "test:it": "nps test.it"
+  },
+  "dependencies": {
+    "redis": "^3.1.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "eslint": "^7.29.0",
+    "mocha": "8.4.0",
+    "nps": "^5.10.0"
+  }
 }
