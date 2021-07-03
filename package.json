@@ -6,6 +6,9 @@
   "repository": "https://github.com/orestisrodriguez/transdis",
   "author": "Orestis Rodriguez <orestis@mediatool.com>",
   "license": "MIT",
+  "files": [
+    "./lib"
+  ],
   "scripts": {
     "test": "nps test",
     "test:unit": "nps test.unit",
