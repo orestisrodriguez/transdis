@@ -1,6 +1,6 @@
 {
   "name": "transdis",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A utility to migrate between Redis instances",
   "main": "index.js",
   "repository": "https://github.com/orestisrodriguez/transdis",
