@@ -7,7 +7,7 @@
   "author": "Orestis Rodriguez <orestis@mediatool.com>",
   "license": "MIT",
   "files": [
-    "./lib"
+    "lib"
   ],
   "scripts": {
     "test": "nps test",
