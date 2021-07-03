@@ -4,7 +4,7 @@
 
 # Transdis
 
-Transdis is a collection of utilities to migrate data between Redis instances, with TLS support. You can use Transdis to transition from one instance to another with zero downtime to your application.
+Transdis is a utility to migrate data between Redis instances, with TLS support.
 
 ## Installation
 

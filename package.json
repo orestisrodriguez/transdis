@@ -1,7 +1,7 @@
 {
   "name": "transdis",
   "version": "1.0.0",
-  "description": "A collection of utilities to migrate between Redis instances",
+  "description": "A utility to migrate between Redis instances",
   "main": "index.js",
   "repository": "https://github.com/orestisrodriguez/transdis",
   "author": "Orestis Rodriguez <orestis@mediatool.com>",
@@ -12,12 +12,16 @@
     "test:it": "nps test.it"
   },
   "dependencies": {
+    "bluebird": "^3.7.2",
+    "ramda": "^0.27.1",
     "redis": "^3.1.2"
   },
   "devDependencies": {
     "chai": "^4.3.4",
+    "cross-spawn": "^7.0.3",
     "eslint": "^7.29.0",
     "mocha": "8.4.0",
-    "nps": "^5.10.0"
+    "nps": "^5.10.0",
+    "tcp-port-used": "^1.0.2"
   }
 }
