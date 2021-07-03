@@ -65,8 +65,19 @@ describe('migrate', () => {
 
   })
 
-  it('should handle 1m keys', async () => {
-    const length = 30000
+  it('should replace destination database', async () => {
+    const key = 'key1'
+    const value = '1'
+    await clients.source.setAsync(key, value)
+    await clients.destination.setAsync('foo', 'bar')
+    await migrate(clients.source, clients.destination, { replace: true })
+
+    const keys = await clients.destination.keysAsync('*')
+    expect(keys).to.deep.equal([ 'key1' ])
+  })
+
+  it('should handle lots of keys', async () => {
+    const length = 500
     for (let i = 1; i <= length; i++) {
       await clients.source.setAsync(`key${i}`, `value${i}`)
     }
